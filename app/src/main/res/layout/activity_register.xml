@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_color_1"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register/Sign Up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/etRegUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvReg"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/username"
+        android:hint=" Username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        android:outlineAmbientShadowColor="@color/my_color_1"
+        android:padding="12dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:background="@color/white"
+        android:cursorVisible="true" />
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegUser"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/email"
+        android:hint=" Email"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:outlineAmbientShadowColor="@color/my_color_1"
+        android:padding="12dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:background="@color/white"
+        android:cursorVisible="true" />
+
+    <EditText
+        android:id="@+id/etRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegEmail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/reg_password"
+        android:hint=" Password"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:outlineAmbientShadowColor="@color/my_color_1"
+        android:padding="12dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:background="@color/white"
+        android:cursorVisible="true" />
+
+    <EditText
+        android:id="@+id/etRegPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/reg_password"
+        android:hint=" Confirm Password"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:outlineAmbientShadowColor="@color/my_color_1"
+        android:padding="12dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:background="@color/white"
+        android:cursorVisible="true" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRegPasswordConfirm"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#f08e05"
+        android:text="Register"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvRegLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have an account?"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnReg"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
